@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Репетитор по ЕГЭ и ОГЭ | Имя Фамилия</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Шапка с приветствием -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1>Добро пожаловать!</h1>
+                <h2>Иван Копытов</h2>
+                <p>Профессиональный репетитор по подготовке к ЕГЭ и ОГЭ. Индивидуальный подход к каждому ученику.</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основное содержимое -->
+    <main class="container">
+        <!-- Раздел ЕГЭ -->
+        <section class="section">
+            <h2>Подготовка к ЕГЭ</h2>
+            <p>Эффективная программа подготовки по авторской методике. Разбор всех заданий, теория и практика.</p>
+        </section>
+
+        <!-- Раздел ОГЭ -->
+        <section class="section">
+            <h2>Подготовка к ОГЭ</h2>
+            <p>Помощь в освоении школьной программы и успешной сдаче экзамена.</p>
+        </section>
+
+        <!-- Раздел "Обо мне" -->
+        <section class="section">
+            <h2>Обо мне</h2>
+            <p>Опыт преподавания — 1 год. Высшее педагогическое образование. Средний балл учеников — 85+.</p>
+        </section>
+
+        <!-- Раздел "Контакты и обратная связь" -->
+        <section class="section">
+            <h2>Свяжитесь со мной</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Контактная информация</h3>
+                    <p>Email: kopytovivan8@gmail.com</p>
+                    <p>Телефон: +7 (919) 463-57-90</p>
+                    <p>Telegram: @dangl3rr</p>
+                </div>
+                <div class="contact-form">
+                    <h3>Форма обратной связи</h3>
+                    <form action="messages.php" method="POST">
+                        <div class="form-group">
+                            <label for="name">Ваше имя:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Ваш email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Сообщение:</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Интересующий курс:</label>
+                            <select id="service" name="service">
+                                <option value="ege">Подготовка к ЕГЭ</option>
+                                <option value="oge">Подготовка к ОГЭ</option>
+                                <option value="school">Школьная программа</option>
+                                <option value="other">Другое</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="submit-btn">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer>
+        <div class="container">
+            <p>© 2025 Репетитор по ЕГЭ и ОГЭ. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>
